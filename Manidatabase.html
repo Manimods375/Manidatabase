@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mani X Owais DataBase</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #0d1117;
+            background-image: radial-gradient(circle at 25% 25%, #1f6feb, #0d1117);
+            color: #fff;
+        }
+        .search-container {
+            backdrop-filter: blur(10px);
+            background: rgba(0, 255, 0, 0.15);
+            border-radius: 16px;
+            padding: 30px;
+            box-shadow: 0 8px 30px rgba(0, 255, 0, 0.2);
+            border: 1px solid rgba(0, 255, 0, 0.4);
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+        }
+        .search-container h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #a0ffa0;
+        }
+        .search-container input {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: none;
+            border-radius: 8px;
+            background-color: rgba(255, 255, 255, 0.1);
+            color: #fff;
+            outline: none;
+            font-size: 16px;
+        }
+        .search-container input::placeholder {
+            color: #a0ffa0;
+        }
+        .search-container button {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            background-color: #00ff00;
+            color: #000;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+        .search-container button:hover {
+            background-color: #00cc00;
+        }
+        .output-box {
+            margin-top: 20px;
+            padding: 15px;
+            border-radius: 12px;
+            background-color: rgba(0, 255, 0, 0.1);
+            border: 1px solid rgba(0, 255, 0, 0.3);
+            box-shadow: 0 8px 30px rgba(0, 255, 0, 0.2);
+            text-align: left;
+            max-height: 300px; /* Set a max height */
+            overflow-y: auto;  /* Add vertical scrolling */
+        }
+        .record {
+            margin-bottom: 10px;
+        }
+        .record p {
+            margin: 5px 0;
+            color: #a0ffa0;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .search-container {
+                width: 90%;
+                padding: 20px;
+            }
+            .search-container h1 {
+                font-size: 20px;
+            }
+        }
+        @media (max-width: 480px) {
+            .search-container {
+                padding: 15px;
+            }
+            .search-container h1 {
+                font-size: 18px;
+            }
+            .search-container button {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="search-container">
+        <h1>Mani X Owais DataBase</h1>
+        <form method="post" action="">
+            <input type="text" name="searchQuery" placeholder="Enter search query..." required>
+            <button type="submit">Search</button>
+        </form>
+        <div class="output-box">
+                    </div>
+    </div>
+</body>
+</html>
